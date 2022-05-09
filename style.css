@@ -1,0 +1,9 @@
+.button {
+	width: 200px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	background-color: #b0e322;
+}
