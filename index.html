@@ -9,9 +9,16 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<input type="text" id="input-text">
+	<div class="inputs">
+		<label for="input-text">Input: </label>
+		<input type="text" id="input-text">
+		<label for="read-text">Have Microsoft David read text: </label>
+		<input type="checkbox" id="read-text">
+	</div>
 	<div class="button" id="generate-text">Generate Text</div>
-	<div id="output"></div>
+	<div class="overflow-container">
+		<div id="output"></div>
+	</div>
 	<div class="button" id="save-text">Save Text</div>
 </body>
 <script src="script.js"></script>

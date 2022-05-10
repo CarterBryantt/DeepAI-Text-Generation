@@ -1,3 +1,23 @@
+body {
+	perspective: 100px;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #000000;
+	font-family: 'Pathway Gothic One', sans-serif;
+	user-select: none;
+}
+
+.inputs {
+	color: #ffffff;
+}
+
+.inputs > input[type="text"] {
+	outline: none;
+}
+
 .button {
 	width: 200px;
 	height: 25px;
@@ -6,4 +26,42 @@
 	justify-content: center;
 	border-radius: 20px;
 	background-color: #b0e322;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #aadc22;
+}
+
+.button:active {
+	background-color: #a1d11f;
+}
+
+.disabled {
+	background-color: #797979;
+	pointer-events: none;
+}
+
+#output {
+	width: 500px;
+	white-space: pre-line;
+	color: #feda4a;
+}
+
+.overflow-container {
+	overflow: hidden;
+}
+
+.scroll {
+	--scroll-time: 15s;
+	animation: scroll var(--scroll-time) linear;
+}
+
+@keyframes scroll {
+	from { transform: translateY(100%); }
+	to { transform: translateY(0%); }
+}
+
+#save-text {
+	display: none;
 }
